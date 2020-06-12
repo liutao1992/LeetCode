@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MoveZeroes/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0070-Climbing-Stairs/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LinkedList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TwoSum" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
