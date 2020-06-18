@@ -1,10 +1,9 @@
+package TwoSum;
+
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- *  求两数之和
- */
-class Solution {
+public class Solution {
 
     public int[] twoSum(int[] nums, int target) {
 
