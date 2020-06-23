@@ -6,9 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MoveZeroes/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0070-Climbing-Stairs/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LinkedList" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ThreeSum/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TwoSum/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FindPivotIndex/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/35SearchInsertPosition/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
