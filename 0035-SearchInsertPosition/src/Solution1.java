@@ -27,6 +27,7 @@ public class Solution1 {
 
             // 小于 target 的元素不一定是解
             if (nums[mid] < target)
+                // 下一轮搜索区间是 [mid + 1, right]
                 left = mid + 1;
             else if (nums[mid] == target)
                 // 根据本题特殊性，看到等于 target 的元素，返回任意一个即可
