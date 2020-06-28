@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/TwoSum/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/FindPivotIndex/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/35SearchInsertPosition/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0146-LRUCache/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
