@@ -34,27 +34,55 @@ import java.util.Stack;
  * 链接：https://leetcode-cn.com/problems/valid-parentheses
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
+//public class Solution {
+//
+//    public static boolean isValid(String s) {
+//        if (s.isEmpty()) return true;
+//
+//        Stack<Character> stack = new Stack<>();
+//
+//        for (char c : s.toCharArray()) {
+//            if (c == '(')
+//                stack.push(')');
+//            else if (c == '[')
+//                stack.push(']');
+//            else if (c == '{')
+//                stack.push('}');
+//            else if (stack.empty() || c != stack.pop())
+//                return false;
+//        }
+//        return stack.empty();
+//    }
+//
+//    public static void main(String[] args) {
+//        String s = "{[]}";
+//        System.out.println(Solution.isValid(s));
+//    }
+//}
+
 public class Solution {
 
     public static boolean isValid(String s) {
-        if (s.isEmpty()) return true;
+        Stack<Character> stack = new Stack<>();
 
-        Stack<Character> stack = new Stack<Character>();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
 
-        for (char c : s.toCharArray()) {
-            if (c == '(') stack.push(')');
-
-            else if (c == '{') stack.push('}');
-
-            else if (c == '[') stack.push(']');
-            // 注意这里必须注意空栈的情况, 若是空栈则在弹出元素时会报错
-            else if (stack.empty() || c != stack.pop()) return false;
+            if (c == '(' || c == '{' || c == '[')
+                stack.push(c);
+            else {
+                if (stack.isEmpty())
+                    return false;
+                char topChar = stack.pop();
+                if (c == ')' && topChar != '(')
+                    return false;
+                if (c == '}' && topChar != '{')
+                    return false;
+                if (c == ']' && topChar != '[')
+                    return false;
+            }
         }
-        return stack.empty();
-    }
-
-    public static void main(String[] args) {
-        String s = "]";
-        System.out.println(Solution.isValid(s));
+        return stack.isEmpty();
     }
 }
+
